@@ -1,7 +1,7 @@
 
 node {
 
-    withMaven(maven:'maven') {
+  def mvnHome
 
         stage('Checkout') {
             git url: 'https://github.com/yuvaraj09/Microservices.git'
@@ -16,6 +16,6 @@ node {
         }
 
      
-    }
+    
 
 }
